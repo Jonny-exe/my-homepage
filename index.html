@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jonnys server</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
+    <script src="https://kit.fontawesome.com/e2415b3d32.js" crossorigin="anonymous">
+
+    </script>
+</head>
+
+<body class="night">
+    <div id="intro">
+        <div id="headerWrapper">
+            <!-- <i class="fas fa-moon toggleLights" id="moon" onclick="toggleLights()"></i>
+        <i class="far fa-sun toggleLights" id="sun" onclick="toggleLights()"></i> -->
+            <h1>Hi there, this is Jonnys server <i class="fas fa-server"></i></h1>
+            <!-- <h2>These are your options:</h2> -->
+        </div>
+        <div id="introContentWrapper">
+            <div id="c1" class="linkContainer intro" onclick="location.href='https://fasttyping.neocities.org/'">
+                <p>
+                    <i class="fas fa-keyboard"></i> Fasttyper
+                </p>
+            </div>
+            <div id="c2" class="linkContainer intro" onclick="location.href='https://fasttyping.neocities.org/'">
+                <p>
+                    <i class="fas fa-keyboard"></i> Fasttyper
+                </p>
+            </div>
+            <div id="c3" class="linkContainer intro" onclick="location.href='https://fasttyping.neocities.org/'">
+                <p>
+                    <i class="fas fa-keyboard"></i> Fasttyper
+                </p>
+            </div>
+        </div>
+        <div class="dotsContainer">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <a class="documentLink" href="#linkContainerWrapper">
+            <div id="triangleWrapper">
+                <!-- <p> Show all </p> -->
+                <div class="triangle down"></div>
+            </div>
+        </a>
+        <hr>
+    </div>
+
+    <div id="linkContainerWrapper">
+        <div class="linkContainer" onclick="location.href='https://fasttyping.neocities.org/'">
+            <p>
+                <i class="fas fa-keyboard"></i> Fasttyper
+            </p>
+        </div>
+        <div class="linkContainer" onclick="location.href='https://fasttyper.sytes.net'">
+            <p>
+                <i class="fas fa-keyboard"></i> Fasttyper Multiplayer
+            </p>
+        </div>
+        <div class="linkContainer" onclick="location.href='http://jonny.sytes.net/chat'">
+            <p>
+                <i class="fas fa-comment-alt"></i> Chat
+            </p>
+        </div>
+        <div class="linkContainer" onclick="location.href='https://fasttyping.neocities.org/snake'">
+            <p>
+                <i class="fas fa-gamepad"></i> Snake
+            </p>
+        </div>
+        <div class="linkContainer" onclick="location.href='https://github.com/Jonny-exe/'">
+            <p>
+                <i class="fab fa-github"></i> My GitHub
+            </p>
+        </div>
+        <a class="documentLink" href="#intro">
+            <div id="triangleWrapper">
+                <div class="triangle up"></div>
+                <!-- <p> Home </p> -->
+            </div>
+        </a>
+    </div>
+</body>
+<script>
+    var lights = true
+    document.body.classList.add("day")
+    const toggleLights = () => {
+        // document.body.classList.toggle("night")
+        document.getElementById("sun").classList.toggle("show")
+        document.getElementById("moon").classList.toggle("show")
+    }
+</script>
+
+</html>

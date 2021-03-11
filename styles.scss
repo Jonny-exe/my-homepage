@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(./Font.ttf) format('truetype');
+}
+
+body {
+    margin: 0%;
+    // font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-family: Open-Sans;
+    text-decoration: none;
+    color: #292C35;
+    --linkContainerBackgroundColor: #292C35;
+    --linkContainerColor: #ffffff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    box-sizing: border-box;
+    height: 100vh;
+    -ms-overflow-style: none;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+
+// Base
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3vmax;
+}
+
+// End base
+
+// Intro 
+
+#intro {
+    height: 100vh;
+
+    .headerWrapper {
+        .material-icons {
+            font-size: 3vmax;
+        }
+    }
+}
+
+#introContentWrapper {
+    margin: 0 1%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    justify-content: center;
+    height: 72%;
+}
+
+
+
+
+// .toggleLights {
+//     float: right;
+// }
+
+body.night {
+    color: white;
+    background-color: #292C35;
+    --linkContainerBackgroundColor: #ffffff;
+    --linkContainerColor: #292C35;
+}
+
+#headerWrapper {
+    text-align: center;
+}
+
+// Container
+
+.linkContainer {
+    flex-shrink: 0;
+    // transform-origin: center center;
+    margin: 1% 1%;
+    padding: 1%;
+    padding: 5%;
+    border-radius: 10px;
+    width: 50%;
+    background-color: var(--linkContainerBackgroundColor);
+    color: var(--linkContainerColor);
+    transition-duration: 0.4s;
+
+    &.intro {
+        width: 100%;
+        scroll-snap-align: center;
+
+        &:hover {
+            box-shadow: 0px 0px 5px 1px black;
+            scale: 1;
+        }
+
+        text-align: center;
+        padding: 0;
+        font-size: 3vmax;
+        font-family: Open-Sans;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 5px 1px white;
+        z-index: 20;
+        scale: 1.1;
+    }
+
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
+}
+
+
+#linkContainerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Moon sun
+
+#moon {
+    display: none;
+}
+
+#moon.show {
+    display: block;
+}
+
+#sun {
+    display: block;
+}
+
+#sun.show {
+    display: none;
+}
+
+// Triangle 
+
+.triangle {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+
+    &.down {
+        border-top: 20px solid white;
+    }
+
+    &.up {
+        border-bottom: 20px solid white;
+    }
+
+
+}
+
+
+// Link
+
+.documentLink {
+    margin: 1%;
+    display: flex;
+    opacity: 0.5;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition-duration: 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// Dots
+.dotsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    border-radius: 50%;
+    background: white;
+    width: 20px;
+    height: 20px;
+    margin: 1%;
+
+
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}

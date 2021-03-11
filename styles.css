@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Open-Sans';
+  src: url(./Font.ttf) format("truetype");
+}
+
+body {
+  margin: 0%;
+  font-family: Open-Sans;
+  text-decoration: none;
+  color: #292C35;
+  --linkContainerBackgroundColor: #292C35;
+  --linkContainerColor: #ffffff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  -ms-overflow-style: none;
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3vmax;
+}
+
+#intro {
+  height: 100vh;
+}
+
+#intro .headerWrapper .material-icons {
+  font-size: 3vmax;
+}
+
+#introContentWrapper {
+  margin: 0 1%;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 72%;
+}
+
+body.night {
+  color: white;
+  background-color: #292C35;
+  --linkContainerBackgroundColor: #ffffff;
+  --linkContainerColor: #292C35;
+}
+
+#headerWrapper {
+  text-align: center;
+}
+
+.linkContainer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 1% 1%;
+  padding: 1%;
+  padding: 5%;
+  border-radius: 10px;
+  width: 50%;
+  background-color: var(--linkContainerBackgroundColor);
+  color: var(--linkContainerColor);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
+}
+
+.linkContainer.intro {
+  width: 100%;
+  scroll-snap-align: center;
+  text-align: center;
+  padding: 0;
+  font-size: 3vmax;
+  font-family: Open-Sans;
+}
+
+.linkContainer.intro:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px black;
+          box-shadow: 0px 0px 5px 1px black;
+  scale: 1;
+}
+
+.linkContainer:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px white;
+          box-shadow: 0px 0px 5px 1px white;
+  z-index: 20;
+  scale: 1.1;
+}
+
+#linkContainerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#moon {
+  display: none;
+}
+
+#moon.show {
+  display: block;
+}
+
+#sun {
+  display: block;
+}
+
+#sun.show {
+  display: none;
+}
+
+.triangle {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: inline-block;
+}
+
+.triangle.down {
+  border-top: 20px solid white;
+}
+
+.triangle.up {
+  border-bottom: 20px solid white;
+}
+
+.documentLink {
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.documentLink:hover {
+  opacity: 1;
+}
+
+.dotsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dot {
+  border-radius: 50%;
+  background: white;
+  width: 20px;
+  height: 20px;
+  margin: 1%;
+  opacity: 0.5;
+}
+
+.dot:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
