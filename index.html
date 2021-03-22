@@ -13,6 +13,9 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+        integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+        crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/e2415b3d32.js" crossorigin="anonymous">
 
@@ -28,7 +31,7 @@
             <!-- <h2>These are your options:</h2> -->
         </div>
         <div id="introContentWrapper">
-            <div id="c1" class="linkContainer intro" onclick="location.href='https://fasttyping.neocities.org/'">
+            <!-- <div id="c1" class="linkContainer intro" onclick="location.href='https://fasttyping.neocities.org/'">
                 <p>
                     <i class="fas fa-keyboard"></i> Fasttyper
                 </p>
@@ -42,14 +45,22 @@
                 <p>
                     <i class="fas fa-keyboard"></i> Fasttyper
                 </p>
+            </div> -->
+            <div class="mainText">
+                Here you can see a overview of all my projects. Remember that all the projects are on my
             </div>
+            <p>
+                <a href="https://github.com/Jonny-exe">
+                    <img src="external-content.duckduckgo.com.png">
+                </a>
+            </p>
         </div>
-        <div class="dotsContainer">
+        <!-- <div class="dotsContainer">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-        </div>
+        </div> -->
         <a class="documentLink" href="#linkContainerWrapper">
             <div id="triangleWrapper">
                 <!-- <p> Show all </p> -->
@@ -101,6 +112,17 @@
         document.getElementById("sun").classList.toggle("show")
         document.getElementById("moon").classList.toggle("show")
     }
+    const loader = new THREE.FontLoader();
+    const geometry = new THREE.TextGeometry('Hello three.js!', {
+        size: 80,
+        height: 5,
+        curveSegments: 12,
+        bevelEnabled: true,
+        bevelThickness: 10,
+        bevelSize: 8,
+        bevelOffset: 0,
+        bevelSegments: 5
+    });
 </script>
 
 </html>

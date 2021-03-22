@@ -1,8 +1,7 @@
 @font-face {
-  font-family: 'Open-Sans';
+  font-family: "Open-Sans";
   src: url(./Font.ttf) format("truetype");
 }
-
 body {
   margin: 0%;
   font-family: Open-Sans;
@@ -15,8 +14,7 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 100vh;
   -ms-overflow-style: none;
 }
@@ -43,33 +41,21 @@ h1 {
 }
 
 #intro {
-  height: 100%;
+  height: 100vh;
 }
-
 #intro .headerWrapper .material-icons {
   font-size: 3vmax;
 }
 
 #introContentWrapper {
   margin: 0 1%;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow-x: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 77%;
+  justify-content: center;
+  height: 72%;
 }
 
 body.night {
@@ -84,8 +70,7 @@ body.night {
 }
 
 .linkContainer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin: 1% 1%;
   padding: 1%;
   padding: 5%;
@@ -93,12 +78,9 @@ body.night {
   width: 50%;
   background-color: var(--linkContainerBackgroundColor);
   color: var(--linkContainerColor);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.4s;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
 }
-
 .linkContainer.intro {
   width: 100%;
   scroll-snap-align: center;
@@ -107,31 +89,20 @@ body.night {
   font-size: 3vmax;
   font-family: Open-Sans;
 }
-
 .linkContainer.intro:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px black;
-          box-shadow: 0px 0px 5px 1px black;
+  box-shadow: 0px 0px 5px 1px black;
   scale: 1;
 }
-
 .linkContainer:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px white;
-          box-shadow: 0px 0px 5px 1px white;
+  box-shadow: 0px 0px 5px 1px white;
   z-index: 20;
   scale: 1.1;
 }
 
 #linkContainerWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #moon {
@@ -157,52 +128,32 @@ body.night {
   border-bottom: 20px solid transparent;
   display: inline-block;
 }
-
 .triangle.down {
   border-top: 20px solid white;
 }
-
 .triangle.up {
   border-bottom: 20px solid white;
 }
 
 .documentLink {
   margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   opacity: 0.5;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  transition-duration: 0.3s;
 }
-
 .documentLink:hover {
   opacity: 1;
 }
 
 .dotsContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .dot {
@@ -213,13 +164,8 @@ body.night {
   margin: 1%;
   opacity: 0.5;
 }
-
 .dot:hover {
   opacity: 1;
 }
 
-.mainText {
-  font-size: 3vmax;
-  margin: 1% 5%;
-}
 /*# sourceMappingURL=styles.css.map */

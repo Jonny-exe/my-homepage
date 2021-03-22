@@ -50,7 +50,7 @@ h1 {
 // Intro 
 
 #intro {
-    height: 100vh;
+    height: 100%;
 
     .headerWrapper {
         .material-icons {
@@ -64,10 +64,11 @@ h1 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     display: flex;
+    flex-direction: column;
     align-items: center;
     overflow-x: auto;
     justify-content: center;
-    height: 72%;
+    height: 77%;
 }
 
 
@@ -210,4 +211,9 @@ body.night {
     &:hover {
         opacity: 1;
     }
+}
+
+.mainText {
+    font-size: 3vmax;
+    margin: 1% 5%;
 }
