@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Open-Sans';
-    src: url(./Font.ttf) format('truetype');
+    src: url("./Font.ttf") format('truetype');
 }
 
 body {
-    margin: 0%;
+    margin: 0;
     // font-family: Tahoma, Verdana, Arial, sans-serif;
     font-family: Open-Sans;
     text-decoration: none;
@@ -25,17 +25,15 @@ html {
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
-
-
 // Base
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-a:link,
 a:active,
 a:hover,
+a:link,
 a:visited {
     color: inherit;
     text-decoration: none;
@@ -44,10 +42,8 @@ a:visited {
 h1 {
     font-size: 3vmax;
 }
-
 // End base
-
-// Intro 
+// Intro
 
 #intro {
     height: 100%;
@@ -70,10 +66,6 @@ h1 {
     justify-content: center;
     height: 77%;
 }
-
-
-
-
 // .toggleLights {
 //     float: right;
 // }
@@ -87,16 +79,15 @@ body.night {
 
 #headerWrapper {
     text-align: center;
+    margin-top: 5%;
 }
-
 // Container
 
 .linkContainer {
     flex-shrink: 0;
     // transform-origin: center center;
-    margin: 1% 1%;
+    margin: 1%;
     padding: 1%;
-    padding: 5%;
     border-radius: 10px;
     width: 50%;
     background-color: var(--linkContainerBackgroundColor);
@@ -108,10 +99,9 @@ body.night {
         scroll-snap-align: center;
 
         &:hover {
-            box-shadow: 0px 0px 5px 1px black;
+            box-shadow: 0 0 5px 1px black;
             scale: 1;
         }
-
         text-align: center;
         padding: 0;
         font-size: 3vmax;
@@ -119,21 +109,19 @@ body.night {
     }
 
     &:hover {
-        box-shadow: 0px 0px 5px 1px white;
+        box-shadow: 0 0 5px 1px white;
         z-index: 20;
         scale: 1.1;
     }
-
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0);
 }
-
 
 #linkContainerWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70vh;
 }
-
 // Moon sun
 
 #moon {
@@ -151,8 +139,7 @@ body.night {
 #sun.show {
     display: none;
 }
-
-// Triangle 
+// Triangle
 
 .triangle {
     border-left: 20px solid transparent;
@@ -168,11 +155,7 @@ body.night {
     &.up {
         border-bottom: 20px solid white;
     }
-
-
 }
-
-
 // Link
 
 .documentLink {
@@ -190,8 +173,8 @@ body.night {
         opacity: 1;
     }
 }
-
 // Dots
+
 .dotsContainer {
     display: flex;
     align-items: center;
@@ -204,8 +187,6 @@ body.night {
     width: 20px;
     height: 20px;
     margin: 1%;
-
-
     opacity: 0.5;
 
     &:hover {
@@ -215,5 +196,19 @@ body.night {
 
 .mainText {
     font-size: 3vmax;
-    margin: 1% 5%;
+    margin: 3% 2% 8% 8%;
+}
+
+img {
+    height: 100%;
+}
+
+#imageLink {
+    height: 50%;
+    transform: scale(1);
+    transition-duration: 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }

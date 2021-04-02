@@ -2,20 +2,15 @@
 <html>
 
 <head>
-    <title>Jonnys server</title>
+    <title>Jonny's Server</title>
     <link rel="stylesheet" href="./styles.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
-        integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
-        crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/e2415b3d32.js" crossorigin="anonymous">
 
@@ -27,7 +22,7 @@
         <div id="headerWrapper">
             <!-- <i class="fas fa-moon toggleLights" id="moon" onclick="toggleLights()"></i>
         <i class="far fa-sun toggleLights" id="sun" onclick="toggleLights()"></i> -->
-            <h1>Hi there, this is Jonnys server <i class="fas fa-server"></i></h1>
+            <h1>Hi there, this is Jonny's server <i class="fas fa-server"></i></h1>
             <!-- <h2>These are your options:</h2> -->
         </div>
         <div id="introContentWrapper">
@@ -47,13 +42,11 @@
                 </p>
             </div> -->
             <div class="mainText">
-                Here you can see a overview of all my projects. Remember that all the projects are on my
+                Here you can see an overview of all my projects. Remember that all the projects are on
             </div>
-            <p>
-                <a href="https://github.com/Jonny-exe">
-                    <img src="external-content.duckduckgo.com.png">
-                </a>
-            </p>
+            <a id="imageLink" href="https://github.com/Jonny-exe">
+                <img src="github-logo-face-svgrepo-com.svg">
+            </a>
         </div>
         <!-- <div class="dotsContainer">
             <div class="dot"></div>
@@ -101,7 +94,7 @@
                 <i class="fab fa-github"></i> My GitHub
             </p>
         </div>
-        <a class="documentLink" href="#intro">
+        <a class="documentLink" href="#">
             <div id="triangleWrapper">
                 <div class="triangle up"></div>
                 <!-- <p> Home </p> -->
@@ -117,17 +110,6 @@
         document.getElementById("sun").classList.toggle("show")
         document.getElementById("moon").classList.toggle("show")
     }
-    const loader = new THREE.FontLoader();
-    const geometry = new THREE.TextGeometry('Hello three.js!', {
-        size: 80,
-        height: 5,
-        curveSegments: 12,
-        bevelEnabled: true,
-        bevelThickness: 10,
-        bevelSize: 8,
-        bevelOffset: 0,
-        bevelSegments: 5
-    });
 </script>
 
 </html>
