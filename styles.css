@@ -95,7 +95,6 @@ body.night {
   scale: 1;
 }
 .linkContainer:hover {
-  box-shadow: 0 0 5px 1px white;
   z-index: 20;
   scale: 1.1;
 }
@@ -181,11 +180,11 @@ img {
 
 #imageLink {
   height: 50%;
-  transform: scale(1);
+  transform: scale(0.8);
   transition-duration: 0.5s;
 }
 #imageLink:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=styles.css.map */
